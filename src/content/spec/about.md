@@ -1,10 +1,30 @@
 # 关于
-Fuwari牛逼，我这辈子都不会改博客框架了。 [Fuwari](https://github.com/saicaca/fuwari).
+Fuwari牛逼，我这辈子都不会改博客框架了。 
+
 关于AcoFork的其他站点：[LinkMe](https://link.me/acofork)
 
 ::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+# 友情链接
+
+- 带我入坑网站的超级大坏比：https://phira.dmocken.top/
+
+- site rbq.*找到的：https://saltedfishes.com
+
+- 在代理上教了我很多的好朋友：https://ie.cx
+
+- 私人grgk：https://sub.grgk.me
+
+- 幻空博客：https://blog.huankong.top
+
+- 曾经天天和我斗嘴并且抄我博客的😡：https://blog.muyoung.com/
+
+- 非常酷的Kotlin Compose Web WASM 全Canvas网站：https://nyayurin.github.io/Yutori-Docs/
+
+- 奶昔论坛：https://forum.naixi.net/
+
+- LINUX.DO：https://linux.do
+
+- 宝塔开心版：https://bt.sb
+
+- NodeSeek：https://www.nodeseek.com/
