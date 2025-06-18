@@ -58,13 +58,6 @@ export const profileConfig: ProfileConfig = {
 	bio: "Protect What You Love!",
 	links: [
 		{
-			name: "Telegram",
-			icon: "fa6-brands:telegram", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://t.me/+blyHrp_GihhhMWVl",
-		},
-		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
 			url: "https://space.bilibili.com/325903362",
