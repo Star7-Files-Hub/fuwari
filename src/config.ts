@@ -79,6 +79,6 @@ export const licenseConfig: LicenseConfig = {
 
 export const imageFallbackConfig: ImageFallbackConfig = {
 	enable: true,
-	originalDomain: "r2.afo.im",
+	originalDomain: "fast-r2.afo.im",
 	fallbackDomain: "pub-d433ca7edaa74994b3d7c40a7fd7d9ac.r2.dev",
 };

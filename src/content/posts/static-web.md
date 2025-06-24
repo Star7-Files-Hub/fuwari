@@ -2,7 +2,7 @@
 category: 记录
 description: Serverless服务有很多，静态托管就是重中之重，来看看谁最稳定快速
 draft: false
-image: https://r2.afo.im/fuwari-blog/img/2024-11-28-08-37-49-image.png
+image: https://fast-r2.afo.im/fuwari-blog/img/2024-11-28-08-37-49-image.png
 lang: ''
 published: 2024-11-28
 tags:

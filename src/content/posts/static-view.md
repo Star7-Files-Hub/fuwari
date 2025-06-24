@@ -2,7 +2,7 @@
 title: 静态博客也想展示文章浏览量？当然可以！
 published: 2025-06-18
 description: '利用Umami等站点分析软件可以让管理员了解站点活跃度，但是如果我们想向用户展示一些数据呢？'
-image: 'https://r2.afo.im/myblog/img/db0ed566-92be-4b34-81b7-d5cf8618c1e8.webp'
+image: 'https://fast-r2.afo.im/myblog/img/db0ed566-92be-4b34-81b7-d5cf8618c1e8.webp'
 tags: [Cloudflare, Umami]
 category: '教程'
 draft: false 
@@ -19,7 +19,7 @@ lang: ''
 
 我们可以依赖一些第三方服务，比如[Umami Cloud](https://umami.is)。在你的静态博客的head注入一个js，这样你就可以看到你的站点分析了，类似下图
 
-![](https://r2.afo.im/myblog/img/2c1e7d81-6f6d-4323-b0de-013b2d168be1.webp)
+![](https://fast-r2.afo.im/myblog/img/2c1e7d81-6f6d-4323-b0de-013b2d168be1.webp)
 
 现在我们确实可以看到每个文章（即/posts/xxx）的访问量了，但是我们要如何展示给用户呢？
 
@@ -29,11 +29,11 @@ lang: ''
 
 首先我们要创建一个API Key
 
-![](https://r2.afo.im/myblog/img/e8d57efd-60f8-402d-bc36-331feef5aa57.webp)
+![](https://fast-r2.afo.im/myblog/img/e8d57efd-60f8-402d-bc36-331feef5aa57.webp)
 
 接下来获取你的站点ID，请不要泄露！否则你的站点统计数据可能会不再真实！
 
-![](https://r2.afo.im/myblog/img/99f9eea0-3e8f-4513-9486-d0cf04d50204.webp)
+![](https://fast-r2.afo.im/myblog/img/99f9eea0-3e8f-4513-9486-d0cf04d50204.webp)
 
 拼接URL，尝试手动调用。参考文档： https://umami.is/docs/api/website-stats-api
 
@@ -85,4 +85,4 @@ url：要查询的路径，填写为你的文章页去除了Host的路径，如 
 
 Over，享受它吧！最终效果：
 
-![](https://r2.afo.im/myblog/img/ce822960-f7ef-444e-84d1-fa0758e2b5e8.webp)
+![](https://fast-r2.afo.im/myblog/img/ce822960-f7ef-444e-84d1-fa0758e2b5e8.webp)
