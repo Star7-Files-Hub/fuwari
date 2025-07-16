@@ -18,6 +18,8 @@ description: 关于如何联系二叉树树~
 
 # 其他网站
 
+[吃掉小柚咲](https://php.afo.im/eatkano/)
+
 [六子棋 - Python](https://sixqi.afo.im)
 
 [二次元随机图 - 竖屏](https://php.afo.im/ri/?img=v)
@@ -32,7 +34,7 @@ description: 关于如何联系二叉树树~
 
 > 内测时间截至到哪？
 
-2025年7月15日23:59:59（UTC+8）。详见： https://edgeone.ai/zh/redemption 的 5.规则是什么
+方法 1 从即日起至 2025 年 7 月 25 日晚上 11：59：59 （UTC+8）。方法 2 和方法 3 将在 7 月 15 日之后继续进行。我们目前处于有限测试阶段。详见： https://edgeone.ai/zh/redemption 的 5.规则是什么
 
 > 国内国外兑换码通用吗？
 
