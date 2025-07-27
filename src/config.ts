@@ -211,6 +211,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "https://umami.2x.nz/share/ZyDjOrmjaBTlmGtd", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
+		{
+			name: "xLog",
+			url: "https://www.acofork.com", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
 	],
 };
 
