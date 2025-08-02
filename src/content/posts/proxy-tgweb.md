@@ -9,6 +9,10 @@ draft: false
 lang: ''
 ---
 
+# 注意，将该项目绑定到你的域名会吃Abuse
+
+![](../assets/images/2025-08-02-18-30-40-75bf069f14b199651db36b1bda015bc2_720.jpg)
+
 # 原理
 
 TG Web采用前后端分离
