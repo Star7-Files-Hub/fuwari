@@ -21,7 +21,7 @@ body使用 `from-data` ，key为 `file` vlaue选择一个图片文件，不宜�
 
 示例Curl
 
-```firestore-security-rules
+```bash
 curl --location 'https://ipfs-relay.crossbell.io/upload' \
 --form 'file=@"/C:/Users/AcoFork/Pictures/b_53bb4f7fa91d684e72b666504e3fcc1897.jpg"'
 ```
