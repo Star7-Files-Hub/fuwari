@@ -4,7 +4,7 @@ description: Fuwari是一个静态博客框架，Cloudflare Pages是一个托管
 draft: false
 image: ../assets/images/f286ef4d-326c-4c7c-8a1e-ed150937a12b.webp
 lang: ""
-published: 2025-04-30
+published: 2025-09-17
 tags:
   - Fuwari
 title: Fuwari静态博客搭建教程
