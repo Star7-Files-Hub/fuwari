@@ -37,7 +37,7 @@ export const siteConfig: SiteConfig = {
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://eopfapi.b.2.f.f.0.7.4.0.1.0.0.2.ip6.arpa/pic?img=ua", // Background image URL (supports HTTPS)
+		src: "https://eopfapi.acofork.com.com/pic?img=ua", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
@@ -57,7 +57,7 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 	officialSites: [
-		{ url: "https://blog.2b2x.cn", alias: "EdgeOne CN" },
+		{ url: "https://acofork.com", alias: "EdgeOne CN" },
 		{ url: "https://2x.nz", alias: "Vercel" },
 		
 		{ url: "https://b.2.f.f.0.7.4.0.1.0.0.2.ip6.arpa", alias: "Cloudflare" },
@@ -81,7 +81,7 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "统计",
-			url: "https://umami.2b2x.cn/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
+			url: "https://umami.acofork.com/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
@@ -118,13 +118,13 @@ export const licenseConfig: LicenseConfig = {
 
 export const imageFallbackConfig: ImageFallbackConfig = {
 	enable: true,
-	originalDomain: "eopfapi.2b2x.cn",
+	originalDomain: "eopfapi.acofork.com",
 	fallbackDomain: "eopfapi.b.2.f.f.0.7.4.0.1.0.0.2.ip6.arpa/pic?img=ua",
 };
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://umami.2b2x.cn",
+	baseUrl: "https://umami.acofork.com",
 	shareId: "CdkXbGgZr6ECKOyK",
 	timezone: "Asia/Shanghai",
 };
