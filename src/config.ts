@@ -108,9 +108,9 @@ export const licenseConfig: LicenseConfig = {
 };
 
 export const imageFallbackConfig: ImageFallbackConfig = {
-	enable: true,
+	enable: false,
 	originalDomain: "t.alcy.cc/ycy",
-	fallbackDomain: "eopfapi.b.2.f.f.0.7.4.0.1.0.0.2.ip6.arpa/pic?img=ua",
+	fallbackDomain: "t.alcy.cc/ycy",
 };
 
 export const umamiConfig: UmamiConfig = {
