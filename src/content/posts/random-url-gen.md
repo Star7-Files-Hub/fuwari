@@ -98,7 +98,7 @@ lang: ""
 
 ::github{repo="afoim/Static_RandomPicAPI"}
 
-上线： https://pic.acofork.com
+上线的 API： https://pic.acofork.com
 
 # 总结
 我们共探索了三种流派
