@@ -31,5 +31,5 @@ Cloudflare Page/Worker的重定向文件提供了基于文件的重定向功能�
 
 # 服务架构图
 
-![](../assets/images/Mermaid%20Chart%20-%20Create%20complex,%20visual%20diagrams%20with%20text.-2026-01-09-031619.png)
+![](../assets/images/MermaidChart-Createcomplexvisualdiagramswithtext-2026-01-09-031619.png)
 

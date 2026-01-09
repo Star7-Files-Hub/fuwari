@@ -11,6 +11,7 @@
 		"type-check": "tsc --noEmit --isolatedDeclarations",
 		"new-post": "node scripts/new-post.js",
 		"clean": "node scripts/clean-unused-images.js",
+		"del-space": "node scripts/del-space.js",
 		"format": "biome format --write ./src",
 		"lint": "biome check --write ./src"
 	},

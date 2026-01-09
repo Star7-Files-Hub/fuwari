@@ -46,7 +46,7 @@ lang: ""
 首先，我们先尝试将其部署到Cloudflare
 
 创建一个Cloudflare API Token **编辑Workers** 和 **D1** 
-![](../assets/images/msedge_HwStEUKYVx%201.gif)
+![](../assets/images/msedge_HwStEUKYVx1.gif)
 
 接下来将该Token绑定到你的Github仓库
 ![](../assets/images/uptimeflare-4.png)
