@@ -56,110 +56,81 @@ try {
 </div>
 
 <script is:inline define:vars={{ serverConfig: siteConfig.server || [] }}>
-    function createServerEntry(config, index) {
-        const div = document.createElement('div');
-        div.className = 'flex items-center justify-center';
-        div.id = `server-entry-${index}`;
-        
-        const label = document.createElement('span');
-        label.className = 'text-black/30 dark:text-white/30 text-xs mr-1';
-        label.innerText = `${config.text}：`;
-        div.appendChild(label);
+    (() => {
+        if (window.__footerServerInit) return;
+        window.__footerServerInit = true;
 
-        const valueSpan = document.createElement('span');
-        valueSpan.className = 'server-value text-black/30 dark:text-white/30 text-xs';
-        valueSpan.innerText = '检测中...';
-        div.appendChild(valueSpan);
+        function normalizeUrl(input) {
+            if (!input) return "";
+            return input.trim().replace(/:+$/, "");
+        }
 
-        const iconImg = document.createElement('img');
-        iconImg.className = 'server-icon h-5 ml-1 hidden bg-white rounded p-0.5';
-        iconImg.alt = 'Server Icon';
-        div.appendChild(iconImg);
+        function createServerEntry(config) {
+            const div = document.createElement('div');
+            div.className = 'flex items-center justify-center';
 
-        return { div, valueSpan, iconImg };
-    }
+            const label = document.createElement('span');
+            label.className = 'text-black/30 dark:text-white/30 text-xs mr-1';
+            label.innerText = `${config.text}：`;
+            div.appendChild(label);
 
-    function updateEntryDisplay(elements, server) {
-        const { valueSpan, iconImg } = elements;
-        if (server) {
-            valueSpan.innerText = server;
-            
-            const serverLower = server.toLowerCase();
-            if (serverLower === 'edgeone-pages' || serverLower.includes('edgeone')) {
-                iconImg.src = '/cdn/eo.png';
-                iconImg.classList.remove('hidden');
-                valueSpan.classList.add('hidden');
-            } else if (serverLower === 'cloudflare') {
-                iconImg.src = '/cdn/cf.webp';
-                iconImg.classList.remove('hidden');
-                valueSpan.classList.add('hidden');
-            } else if (serverLower === 'esa') {
-                iconImg.src = '/cdn/esa.svg';
-                iconImg.classList.remove('hidden');
-                valueSpan.classList.add('hidden');
-            } else {
-                iconImg.classList.add('hidden');
-                valueSpan.classList.remove('hidden');
+            const valueSpan = document.createElement('span');
+            valueSpan.className = 'server-value text-black/30 dark:text-white/30 text-xs';
+            valueSpan.innerText = '检测中...';
+            div.appendChild(valueSpan);
+
+            return { div, valueSpan };
+        }
+
+        function updateEntryDisplay(elements, server) {
+            elements.valueSpan.innerText = server || "未知";
+        }
+
+        async function checkServer(url) {
+            try {
+                const targetUrl = normalizeUrl(url) || window.location.href;
+                const response = await fetch(targetUrl, { method: "HEAD" });
+                return response.headers.get('server');
+            } catch (error) {
+                console.warn(`Failed to fetch server info for ${url}:`, error);
+                return null;
             }
-        } else {
-            valueSpan.innerText = "未知";
-            valueSpan.classList.remove('hidden');
-            iconImg.classList.add('hidden');
         }
-    }
 
-    async function checkServer(url) {
-        try {
-            const targetUrl = url || window.location.href;
-            const response = await fetch(targetUrl, { method: "HEAD" });
-            return response.headers.get('server');
-        } catch (error) {
-            console.warn(`Failed to fetch server info for ${url}:`, error);
-            return null;
-        }
-    }
+        async function initServerInfo() {
+            const containers = document.querySelectorAll('.server-info-container');
+            if (containers.length === 0) return;
 
-    async function initServerInfo() {
-        const containers = document.querySelectorAll('.server-info-container');
-        if (containers.length === 0) return;
-        
-        // Cache fetched results to avoid duplicate requests
-        const results = {};
+            window.__serverInfoCache = window.__serverInfoCache || {};
+            const cache = window.__serverInfoCache;
 
-        // Helper to get or fetch server info
-        const getServerInfo = async (url) => {
-            if (results[url] !== undefined) return results[url];
-            const server = await checkServer(url);
-            results[url] = server;
-            return server;
-        };
+            const getServerInfo = (url) => {
+                const key = normalizeUrl(url);
+                if (cache[key]) return cache[key];
+                cache[key] = checkServer(key);
+                return cache[key];
+            };
 
-        containers.forEach(container => {
-            // Clear existing content
-            container.innerHTML = '';
+            containers.forEach(container => {
+                container.innerHTML = '';
 
-            if (!serverConfig || serverConfig.length === 0) {
-                // Default fallback
-                const { div, valueSpan, iconImg } = createServerEntry({ text: '访问节点' }, 0);
-                container.appendChild(div);
-                
-                getServerInfo('').then(server => {
-                    updateEntryDisplay({ valueSpan, iconImg }, server);
-                });
-            } else {
-                serverConfig.forEach((config, index) => {
-                    const elements = createServerEntry(config, index);
+                if (!serverConfig || serverConfig.length === 0) {
+                    const elements = createServerEntry({ text: '访问节点' });
                     container.appendChild(elements.div);
+                    getServerInfo('').then(server => updateEntryDisplay(elements, server));
+                    return;
+                }
 
-                    getServerInfo(config.url).then(server => {
-                        updateEntryDisplay(elements, server);
-                    });
+                serverConfig.forEach((config) => {
+                    const elements = createServerEntry(config);
+                    container.appendChild(elements.div);
+                    getServerInfo(config.url).then(server => updateEntryDisplay(elements, server));
                 });
-            }
-        });
-    }
+            });
+        }
 
-    initServerInfo();
-    document.addEventListener('astro:after-swap', initServerInfo);
-    document.addEventListener('content:replace', initServerInfo);
+        initServerInfo();
+        document.addEventListener('astro:after-swap', initServerInfo);
+        document.addEventListener('content:replace', initServerInfo);
+    })();
 </script>
