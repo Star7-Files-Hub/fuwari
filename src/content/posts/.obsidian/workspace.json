@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MoviePilot.md",
+                "file": "Typecho.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "MoviePilot"
+              "title": "Typecho"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MoviePilot.md",
+                "file": "Typecho.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "MoviePilot 的反向链接列表"
+              "title": "Typecho 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MoviePilot.md",
+                "file": "Typecho.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "MoviePilot 的出链列表"
+              "title": "Typecho 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MoviePilot.md",
+                "file": "Typecho.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MoviePilot 的大纲"
+              "title": "Typecho 的大纲"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "005b5a6e0d7ab9d7",
   "lastOpenFiles": [
-    "Typecho.md",
     "MoviePilot.md",
+    "Typecho.md",
     "12.md"
   ]
 }
