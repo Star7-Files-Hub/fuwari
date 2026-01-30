@@ -18,10 +18,10 @@ export const noticeConfig: NoticeConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-	title: "AcoFork Blog",
+	title: "7Star's Blog",
 	subtitle: "技术分享与实践",
 	description:
-		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为afoim/二叉树树",
+		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发。",
 
 	keywords: [],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
@@ -64,12 +64,11 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 	officialSites: [
-		{ url: "https://blog.acofork.com", alias: "CN" },
-		{ url: "https://2x.nz", alias: "Global" },
+		{ url: "https://blog.843003.xyz", alias: "CN" },
+		{ url: "https://b.843003.xyz", alias: "Global" },
 	],
 	server: [
 		{ url: "", text: "Blog" },
-		{ url: "https://umami.acofork.com", text: "Umami" },
 		{ url: "https://pic1.acofork.com", text: "RandomPic" },
 	],
 };
@@ -88,53 +87,18 @@ export const navBarConfig: NavBarConfig = {
 			url: "/sponsors/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
-		{
-			name: "统计",
-			url: "https://umami.acofork.com/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-		{
-			name: "监控",
-			url: "https://status.acofork.com", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-		{
-			name: "论坛",
-			url: "https://i.2x.nz", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
-	bio: "Protect What You Love.",
+	avatar: "https://chat-page.oss-cn-hangzhou.aliyuncs.com/2041/upload/48651322a16142938ee3c910d41b1b11/d915d1b324de4904b72799ec0ac2c4ad.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "7Star",
+	bio: "没有绝对安全的系统。",
 	links: [
-		{
-			name: "QQ",
-			icon: "qq", // Local icon
-			url: "https://qm.qq.com/q/FWqOHlwL2m",
-		},
-		{
-			name: "Telegram",
-			icon: "telegram", // Local icon
-			url: "https://t.me/+_07DERp7k1ljYTc1",
-		},
-		{
-			name: "Bilibli",
-			icon: "bilibili", // Local icon
-			url: "https://space.bilibili.com/325903362",
-		},
 		{
 			name: "GitHub",
 			icon: "github", // Local icon
-			url: "https://github.com/afoim",
-		},
-		{
-			name: "Folo",
-			icon: "folo", // Local icon
-			url: "https://app.folo.is/share/feeds/236818461447222272",
+			url: "https://github.com/Star7-Files-Hub",
 		},
 	],
 };
@@ -151,12 +115,6 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 	fallbackDomain: "https://eopfapi.acofork.com/pic?img=ua",
 };
 
-export const umamiConfig: UmamiConfig = {
-	enable: true,
-	baseUrl: "https://umami.acofork.com",
-	shareId: "CdkXbGgZr6ECKOyK",
-	timezone: "Asia/Shanghai",
-};
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	theme: "github-dark",
@@ -164,7 +122,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 export const gitHubEditConfig: GitHubEditConfig = {
 	enable: true,
-	baseUrl: "https://github.com/afoim/fuwari/blob/main/src/content/posts",
+	baseUrl: "https://github.com/Star7-Files-Hub/fuwari/blob/main/src/content/posts",
 };
 
 // todoConfig removed from here
