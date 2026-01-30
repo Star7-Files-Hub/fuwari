@@ -39,21 +39,13 @@ tags:
 ```yaml
 
 version:'3.3'
-
 services:
-
     wxchat:
-
         container_name:wxchat
-
         restart:always
-
         ports:
-
             - '8080:80' # 此处端口看个人喜好，服务器安全组别忘记开放哦~
-
         image:'ddsderek/wxchat:latest'
-
 ```
 
 3. 自己注册一个企业微信
@@ -65,13 +57,9 @@ services:
 ```toml
 
 # Frps 服务端配置文件
-
   
-
 # 通用配置
-
 bindPort = 8633 # 此处为服务端开放端口，记得安全组放行端口
-
 kcpBindPort = 8633 # kcp加速绑定的是udp端口，可以和bindPort一样
 
 ```
@@ -87,23 +75,16 @@ kcpBindPort = 8633 # kcp加速绑定的是udp端口，可以和bindPort一样
 [common]
 
 server_addr = "122.xxx.xxx.xxx" # 此处填你服务器端的IP
-
 server_port = 8633 # 此处填你服务器端开放的端口
-
 token = "qwertyuiopasdfghjkl" # 此处填你服务器端设置的token，如未设置即无需此行
-
   
 
 # 要建立的映射服务配置
 
 [MP1]
-
 type = "tcp" # 此行默认保持不动
-
 local_ip = "192.168.10.88" # 将等号后面的IP换成自己的MoviePilot内网IP
-
 local_port = 3000 # 将等号后面的端口后换成自己MoviePilot的端口号
-
 remote_port = 6668 # 将等号后的端口号换成自己想用的端口号，需在服务器安全组放行端口
 
 ```
