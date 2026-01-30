@@ -115,8 +115,8 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
     enable: false, 
-    baseUrl: "", 
-    shareId: "", 
+    baseUrl: "https://cloud.umami.is", 
+    shareId: "kAsGeyd4YFp2AvW2", 
     timezone: "Asia/Shanghai",
 };
 
