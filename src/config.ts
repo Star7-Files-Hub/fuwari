@@ -68,8 +68,6 @@ export const siteConfig: SiteConfig = {
 		{ url: "https://b.843003.xyz", alias: "Global" },
 	],
 	server: [
-		{ url: "", text: "Blog" },
-		{ url: "https://pic1.acofork.com", text: "RandomPic" },
 	],
 };
 
@@ -82,11 +80,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/friends/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
-		{
-			name: "赞助",
-			url: "/sponsors/", // Internal links should not include the base path, as it is automatically added
-			external: false, // Show an external link icon and will open in a new tab
-		},
+		// {
+		// 	name: "赞助",
+		// 	url: "/sponsors/", // Internal links should not include the base path, as it is automatically added
+		// 	external: false, // Show an external link icon and will open in a new tab
+		// },
 	],
 };
 
