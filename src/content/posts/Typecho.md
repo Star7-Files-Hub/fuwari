@@ -2,7 +2,7 @@
 draft: false
 title: 如何安装Typecho博客程序
 published: 2025-03-18
-image: https://wp-cdn.4ce.cn/v2/74aPlV8.jpeg
+image: https://random.843003.xyz/images/165.webp
 tags:
   - 教程
   - Blog

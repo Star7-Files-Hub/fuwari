@@ -2,7 +2,7 @@
 draft: false
 title: MoviePilot如何使用企业微信通知及交互
 published: 2025-03-17
-image: https://wp-cdn.4ce.cn/v2/MyNZqCP.jpeg
+image: https://random.843003.xyz/images/83.webp
 tags:
   - 教程
   - NAS

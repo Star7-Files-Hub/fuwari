@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bitwarden.md",
+                "file": "MoviePilot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bitwarden"
+              "title": "MoviePilot"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bitwarden.md",
+                "file": "MoviePilot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Bitwarden 的反向链接列表"
+              "title": "MoviePilot 的反向链接列表"
             }
           },
           {
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bitwarden.md",
+                "file": "MoviePilot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Bitwarden 的出链列表"
+              "title": "MoviePilot 的出链列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bitwarden.md",
+                "file": "MoviePilot.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Bitwarden 的大纲"
+              "title": "MoviePilot 的大纲"
             }
           }
         ]
@@ -214,10 +214,10 @@
   },
   "active": "d27488c798bfcfd0",
   "lastOpenFiles": [
-    "LeelaaNav.md",
-    "Bitwarden.md",
     "Typecho.md",
     "MoviePilot.md",
+    "Bitwarden.md",
+    "LeelaaNav.md",
     "12.md"
   ]
 }
