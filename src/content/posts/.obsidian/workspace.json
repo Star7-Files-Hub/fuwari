@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typecho.md",
+                "file": "MoviePilot.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Typecho"
+              "title": "MoviePilot"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Typecho.md",
+                "file": "MoviePilot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Typecho 的反向链接列表"
+              "title": "MoviePilot 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Typecho.md",
+                "file": "MoviePilot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Typecho 的出链列表"
+              "title": "MoviePilot 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Typecho.md",
+                "file": "MoviePilot.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Typecho 的大纲"
+              "title": "MoviePilot 的大纲"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "005b5a6e0d7ab9d7",
   "lastOpenFiles": [
-    "MoviePilot.md",
     "Typecho.md",
+    "MoviePilot.md",
     "12.md"
   ]
 }
