@@ -115,6 +115,12 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 	fallbackDomain: "https://eopfapi.acofork.com/pic?img=ua",
 };
 
+export const umamiConfig: UmamiConfig = {
+    enable: false, 
+    baseUrl: "", 
+    shareId: "", 
+    timezone: "Asia/Shanghai",
+};
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	theme: "github-dark",
