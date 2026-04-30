@@ -249,7 +249,56 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <!-- Basic Analytics -->
 <!-- Umami -->
-<script defer src="https://umami.930407.xyz:1234/script.js" data-website-id="0f942fae-99a3-4179-95e4-af2a2d36583f"></script>
+<script>
+// 固定你的配置
+const baseUrl = "https://umami.930407.xyz:1234";
+const websiteId = "0f942fae-99a3-4179-95e4-af2a2d36583f";
+const timezone = "Asia/Shanghai";
+
+// 兼容新版Umami的请求工具
+async function doFetch(url) {
+  const response = await fetch(url);
+  if (!response.ok) return { pageviews: 0 };
+  return response.json();
+}
+
+// 修复全站统计
+async function loadSiteStats() {
+  const endAt = Date.now();
+  const startAt = endAt - 365 * 24 * 60 * 60 * 1000; // 合法时间
+  const params = new URLSearchParams({
+    startAt: startAt.toString(),
+    endAt: endAt.toString(),
+    unit: "hour",
+    timezone: timezone
+    // ✅ 关键：彻底删除 compare 参数！
+  });
+  await doFetch(`${baseUrl}/api/websites/${websiteId}/stats?${params}`);
+}
+
+// 修复页面阅读量（核心）
+async function fetchPageViews(path) {
+  const endAt = Date.now();
+  const startAt = endAt - 365 * 24 * 60 * 60 * 1000; // 合法时间
+  const params = new URLSearchParams({
+    startAt: startAt.toString(),
+    endAt: endAt.toString(),
+    unit: "hour",
+    timezone: timezone
+    // ✅ 关键：彻底删除 compare 参数！
+  });
+
+  const data = await doFetch(`${baseUrl}/api/websites/${websiteId}/stats?${params}`);
+  const el = document.getElementById("page-views");
+  if (el) el.innerText = data.pageviews || "0";
+}
+
+// 自动运行
+document.addEventListener('DOMContentLoaded', () => {
+  loadSiteStats();
+  fetchPageViews(window.location.pathname);
+});
+</script>
 <!-- end of Basic Analytics-->
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
