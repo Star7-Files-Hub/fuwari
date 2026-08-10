@@ -2,7 +2,7 @@
 title: DNSHE GitHub Star 突破 10,000！感恩回馈福利来袭
 date: 2026-08-10
 tags: [DNSHE, 免费域名, GitHub, 福利, Cloudflare]
-published: true
+published: 2026-08-10
 ---
 
 # 🎉 DNSHE GitHub 项目 Star 突破 10,000！感恩回馈福利来袭！
